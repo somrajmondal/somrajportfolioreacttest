@@ -1,3 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Roboto+Condensed&family=Roboto:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "georgia",
+}
+
+.navbar {
+  background-color: #fff !important;
+  ;
+}
+
+.navba-brand {
+  font-size: 1.9rem;
+  color: darkgrey;
+}
+
+.menu_active {
+  font-size: 1.3rem;
+  text-transform: capitalize;
+}
+
+.navbar a:hover {
+  color: blue;
+}
+
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +40,123 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.animated {
+  animation: fadeIn 1s ease-in-out;
+}
+
+#header {
+  width: 100%;
+  height: 80vh;
+  margin-top: 70px;
+}
+
+#header h1 {
+  margin: 0 0 10px 0;
+  font-size: 50px;
+  font-weight: 700;
+  color: black
+}
+
+#header .brand-name {
+
+  color: rgb(57, 57, 211);
+}
+
+#header h2 {
+  margin: 0 0 10px 0;
+  font-size: 50px;
+  font-weight: 700;
+  color: black
+}
+
+#header .header-img {
+  text-align: right;
+  
+}
+
+.header-somrajimg {
+  width: 150px; /* Adjust the width as needed */
+}
+
+
+
+#header .animated {
+  animation-name: up-down;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes up-down {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.homeabout {
+  color: black;
+  align-items: center;
+  text-align: center;
+}
+
+
+
+.img-somraj-home {
+  text-align: center;
+}
+
+.img-somraj-home img {
+  width: 300px;
+  height: auto;
+  max-width: 100%;
+}
+
+.social-container {
+  background: #eee;
+  padding: 25px 50px;
+}
+
+a.social {
+  margin: 0 1rem;
+  transition: transform 250ms;
+  display: inline-block;
+}
+
+a.social:hover {
+  transform: translateY(-2px);
+}
+a.youtube {
+  color: #eb3223;
+}
+
+a.facebook {
+  color: #4968ad;
+}
+
+a.twitter {
+  color: #49a1eb;
+}
+
+a.instagram {
+  color: black;
 }
